@@ -4,10 +4,10 @@
           name={{username}}
           password={{ devops_password }}
  
-   - name: Add devops user to the sudoers
-     copy:
-          dest: "/etc/sudoers.d/{{username}}"
-          content: "{{username}}  ALL=(ALL)  NOPASSWD: ALL"
+#   - name: Add devops user to the sudoers
+ #    copy:
+  #        dest: "/etc/sudoers.d/{{username}}"
+   #       content: "{{username}}  ALL=(ALL)  NOPASSWD: ALL"
  
 #   - name: Deploy SSH Key
  #    authorized_key: user={{username}}
